@@ -7,6 +7,7 @@ clientjs
 =========
 
 在页面顶端加入如下代码
+
 	<script src="http://st1.dbank.com/netdisk/components/xdr/client.js"></script>
 
 使用
@@ -16,7 +17,8 @@ clientjs
 *1.引入sdk*
 
 >函数说明：初始化nspclient
->参数说明：appid:对应应用级appid,必填
+
+>参数说明：appid 对应应用级appid 必填
     
 	var nsp = new NSPClient(appid);
 
@@ -47,7 +49,7 @@ clientjs
 	var nsp = new NSPClient('xxxxxx');
 	nsp.login(function(){
 		var userInfo = ['user.username', 'user.uid'];
-		nspclient.api('nsp.user.getInfo',{attrs:userInfo},function(data){
+		nsp.api('nsp.user.getInfo',{attrs:userInfo},function(data){
 			console.log(data);
 		});
 	})
@@ -61,7 +63,7 @@ clientjs
 			'path':'/',
 			'fields':'["name","size","type", "dirCount", "fileCount", "dbank_systemType", "dbank_isShared", "modifyTime"]'	    
 		}
-		nspclient.api('nsp.vfs.lsdir',data,function(data){
+		nsp.api('nsp.vfs.lsdir',data,function(data){
 			console.log(data);
 		});
 	})

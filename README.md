@@ -70,6 +70,11 @@ clientjs
     返回:{"childList":[{"name":"Netdisk","dirCount":"0","fileCount":"0","modifyTime":"2012-07-19 07:08:40","type":"Directory"}]}
 
 
+版权
+=========
+此包里包括了以下两个功能，压缩js考虑到性能去掉版权信息：
+1.MD5 hash algorithm 具体版权属于 Muhammad Hussein Fattahizadeh < muhammad [AT] semnanweb [DOT] com > - MIT License: http://www.gnu.org/licenses/gpl.html
+2.JSONP Core 具体版权属于 Julian Aubourg - MIT License: http://www.opensource.org/licenses/mit-license.php
 
 
 
